@@ -1,0 +1,24 @@
+
+/* components/Navbar.module.css */
+.navbar {
+    width: 1442px;
+    height: 57px;
+    gap: 0px;
+    opacity: 0px;
+    
+  }
+  
+  .logo img {
+    height: 40px;
+  }
+  
+  /* Responsividad */
+  @media (max-width: 768px) {
+    .navbar {
+      height: 50px;
+    }
+  
+    .logo img {
+      height: 30px;
+    }
+  }

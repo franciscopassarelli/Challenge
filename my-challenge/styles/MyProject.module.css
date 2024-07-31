@@ -1,0 +1,114 @@
+/* styles/MyProject.module.css */
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  margin-bottom: 15px;
+  font-size: 1.75rem; /* Tamaño del título más grande */
+  color: #333; /* Color del texto del título */
+}
+
+.projectList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* Espacio entre los elementos */
+}
+
+.projectList li {
+  padding: 15px; /* Más espacio interno */
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px; /* Bordes más redondeados */
+  flex: 1 1 calc(50% - 15px); /* Ajusta el ancho de los elementos en la lista */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Sombra para cada elemento */
+}
+
+.projectList li strong {
+  font-size: 1.125rem; /* Tamaño de fuente más grande */
+  margin-bottom: 10px; /* Espacio debajo del nombre del proyecto */
+  color: #333; /* Color del texto */
+}
+
+.projectList li div {
+  margin-top: 10px;
+  color: #666; /* Color del texto de detalles */
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px; /* Espacio entre los botones */
+  margin-top: 15px;
+}
+
+.editButton {
+  background-color: #2b2b2b; /* Rojo para el botón del link */
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 0.875rem;
+  cursor: pointer;
+}
+
+.editButton:hover {
+  background-color: #464646; /* Rojo más oscuro para el hover */
+}
+
+
+.deleteButton {
+  background-color: #070000;
+  border-radius: 4px;
+  border: none;
+  color: rgb(186, 186, 186); /* Rojo para eliminar */
+  font-size: 1rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.deleteButton:hover {
+  color: rgb(163, 163, 163);
+}
+
+.addProjectLink {
+  display: inline-block;
+  padding: 10px 15px; /* Más espacio interno */
+  border: none;
+  background-color: #a21000;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.875rem;
+  text-decoration: none;
+  margin-top: 20px; /* Más espacio arriba */
+}
+
+.addProjectLink:hover {
+  background-color: #960000;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .projectList li {
+    flex: 1 1 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+  }
+  
+  .title {
+    font-size: 1.5rem; /* Reducir tamaño del título en pantallas pequeñas */
+  }
+
+  .addProjectLink {
+    width: 100%; /* Botón ocupa todo el ancho en pantallas pequeñas */
+    text-align: center; /* Centrar texto del botón */
+  }
+}
